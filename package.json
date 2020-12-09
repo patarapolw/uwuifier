@@ -1,6 +1,6 @@
 {
-  "name": "uwuifier",
-  "version": "2.0.3",
+  "name": "@patarapolw/uwuifier",
+  "version": "2.0.3a",
   "main": "dist/index.js",
   "types": "dist/index.d.js",
   "unpkg": "dist/index.umd.js",
@@ -51,7 +51,7 @@
     "serve": "nodemon",
     "build": "npm run lint && npm run format && npm run test && ts",
     "format": "prettier --write \"src/**/*.ts\"",
-    "prepare": "npm run build && parcel build dist/index.js -o dist/index.umd.js"
+    "prepare": "npm run build && parcel build umd.js -o dist/index.umd.js"
   },
   "nodemonConfig": {
     "ignore": [
