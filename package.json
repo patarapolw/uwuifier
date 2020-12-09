@@ -1,12 +1,9 @@
 {
   "name": "@patarapolw/uwuifier",
-  "version": "2.0.3a",
+  "version": "2.0.4",
   "main": "dist/index.js",
   "types": "dist/index.d.js",
   "unpkg": "dist/index.umd.js",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "files": [
     "/dist"
   ],
