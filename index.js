@@ -13,20 +13,27 @@ var Uwuifier = /** @class */ (function () {
     function Uwuifier(_a) {
         var _b = _a === void 0 ? {
             spaces: { faces: 0.05, actions: 0.075, stutters: 0.1 },
-            words: 1,
+            words: 0.7,
             exclamations: 1
         } : _a, _c = _b.spaces, spaces = _c === void 0 ? { faces: 0.05, actions: 0.075, stutters: 0.1 } : _c, _d = _b.words, words = _d === void 0 ? 1 : _d, _e = _b.exclamations, exclamations = _e === void 0 ? 1 : _e;
-        this.faces = ["(\u30FB`\u03C9\u00B4\u30FB)", ";;w;;", "owo", "UwU", ">w<", "^w^", "\u00DAw\u00DA", ":3", "x3"];
-        this.exclamations = ["?!!", "?!?1", "!!11", "?!?!", "!?"];
+        this.faces = ["(\u30FB`\u03C9\u00B4\u30FB)", ";;w;;", 'OwO', "UwU", ">w<", "^w^", "\u00DAw\u00DA", '^-^', ":3", "x3"];
+        this.exclamations = ["!?", "?!!", "?!?1", "!!11", "?!?!"];
         this.actions = [
             "*blushes*",
             "*whispers to self*",
-            "*sweats*",
-            "*sees bulge*",
+            '*cries*',
+            '*screams*',
+            '*sweats*',
+            '*twerks*',
             "*runs away*",
+            '*screeches*',
+            '*walks away*',
+            "*sees bulge*",
+            '*looks at you*',
+            "*notices buldge*",
+            "*starts twerking*",
             "*huggles tightly*",
-            "*boops your nose*",
-            "*starts twerking*"
+            "*boops your nose*"
         ];
         this.uwuMap = [
             [/(?:r|l)/g, "w"],
@@ -41,7 +48,7 @@ var Uwuifier = /** @class */ (function () {
             actions: 0.075,
             stutters: 0.1
         };
-        this._wordsModifier = words !== null && words !== void 0 ? words : 1;
+        this._wordsModifier = words !== null && words !== void 0 ? words : 0.7;
         this._exclamationsModifier = exclamations !== null && exclamations !== void 0 ? exclamations : 1;
     }
     Uwuifier.prototype.uwuifyWords = function (sentence) {
